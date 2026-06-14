@@ -222,7 +222,7 @@ export default function App() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-black">mindad_69</h3>
+              <h3 className="text-2xl font-black">Karthik Raja</h3>
               <p className="text-cyan-400 font-black">Aura Rising</p>
               <p className="text-[#ccff1a] font-black mt-2">✨ 152 Aura</p>
               <p className="text-pink-400 font-black">💀 Cooked</p>

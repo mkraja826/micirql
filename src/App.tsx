@@ -302,7 +302,7 @@ export default function App() {
           Mi<span className="text-[#ccff1a]">Cirql</span>
         </h2>
         <p className="text-[#8fa7ce]">
-          Private. Real. Gen Z. Built for your actual people.
+          Private. Real. Gen Z. Built for your actual circle.
         </p>
       </footer>
     </main>

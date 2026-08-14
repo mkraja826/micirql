@@ -60,7 +60,7 @@ const pros = [
 export default function App() {
   return (
     <main className="min-h-screen bg-[#070d1c] text-white overflow-hidden">
-      <nav className="sticky top-0 z-50 bg-[#070d1c]/90 backdrop-blur border-b border-[#20304a]">
+      <nav className="sticky top-0 z-50 bg-[#070d1c] md:bg-[#070d1c]/90 md:backdrop-blur border-b border-[#20304a]">
         <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
           <h1 className="text-2xl md:text-3xl font-black">
             Mi<span className="text-[#ccff1a]">Cirql</span>
@@ -75,7 +75,7 @@ export default function App() {
         </div>
       </nav>
 
-      <section className="max-w-7xl mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      <section className="max-w-7xl mx-auto px-5 py-12 md:py-24 grid lg:grid-cols-2 gap-10 md:gap-12 items-center">
         <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-[#111a2b] border border-[#263856] rounded-full px-4 py-2 mb-6">
             <span>🔥</span>
@@ -84,7 +84,7 @@ export default function App() {
             </span>
           </div>
 
-          <h2 className="text-5xl md:text-7xl font-black leading-tight">
+          <h2 className="text-[2.75rem] sm:text-5xl md:text-7xl font-black leading-tight">
             Your people.
             <br />
             Your vibe.
@@ -92,7 +92,7 @@ export default function App() {
             Your <span className="text-[#ccff1a]">Cirql.</span>
           </h2>
 
-          <p className="text-[#b7c8e8] text-lg mt-6 max-w-xl mx-auto lg:mx-0">
+          <p className="text-[#b7c8e8] text-base sm:text-lg mt-6 max-w-xl mx-auto lg:mx-0">
             MiCirql is a private social app for real friends, honest reality
             checks, anonymous truths, aura profiles, and Gen Z conversations.
           </p>
@@ -115,8 +115,8 @@ export default function App() {
         </div>
 
         <div className="flex justify-center">
-          <div className="w-[290px] md:w-[360px] bg-[#111a2b] border border-[#263856] rounded-[40px] p-4 shadow-2xl">
-            <div className="bg-[#080e1f] rounded-[32px] p-5 min-h-[620px]">
+          <div className="w-full max-w-[320px] md:max-w-[360px] bg-[#111a2b] border border-[#263856] rounded-[36px] md:rounded-[40px] p-3 md:p-4 shadow-2xl">
+            <div className="bg-[#080e1f] rounded-[28px] md:rounded-[32px] p-4 md:p-5 min-h-[580px] md:min-h-[620px]">
               <h3 className="text-3xl font-black">Chats</h3>
               <p className="text-[#9eb4d8] text-sm mb-5">
                 Your cirql, one vibe at a time.
@@ -153,12 +153,12 @@ export default function App() {
         </div>
       </section>
 
-      <section id="features" className="max-w-7xl mx-auto px-5 py-16">
-        <h2 className="text-4xl md:text-5xl font-black text-center mb-4">
+      <section id="features" className="max-w-7xl mx-auto px-5 py-12 md:py-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center mb-4">
           Detailed MiCirql Features
         </h2>
 
-        <p className="text-[#b7c8e8] text-center max-w-2xl mx-auto mb-12">
+        <p className="text-[#b7c8e8] text-center max-w-2xl mx-auto mb-10 md:mb-12">
           MiCirql is not just another chat app. It is designed around private
           circles, real reactions, emotional honesty, and Gen Z social behavior.
         </p>
@@ -167,7 +167,7 @@ export default function App() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="bg-[#111a2b] border border-[#263856] rounded-[28px] p-6 hover:border-[#ccff1a] transition"
+              className="bg-[#111a2b] border border-[#263856] rounded-[24px] md:rounded-[28px] p-5 md:p-6 hover:border-[#ccff1a] transition"
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-black mb-2">{feature.title}</h3>
@@ -177,9 +177,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-5 py-16 grid lg:grid-cols-2 gap-6">
-        <div className="bg-[#111a2b] border border-[#263856] rounded-[32px] p-8">
-          <h2 className="text-4xl font-black mb-4">Signals ⚡</h2>
+      <section className="max-w-7xl mx-auto px-5 py-12 md:py-16 grid lg:grid-cols-2 gap-6">
+        <div className="bg-[#111a2b] border border-[#263856] rounded-[28px] md:rounded-[32px] p-6 md:p-8">
+          <h2 className="text-3xl md:text-4xl font-black mb-4">Signals ⚡</h2>
           <p className="text-[#b7c8e8] mb-6">
             Signals are small social moments where users ask their Cirql for
             honest feedback.
@@ -209,20 +209,20 @@ export default function App() {
           </div>
         </div>
 
-        <div className="bg-[#111a2b] border border-[#263856] rounded-[32px] p-8">
-          <h2 className="text-4xl font-black mb-4">Aura Profiles 🌈</h2>
+        <div className="bg-[#111a2b] border border-[#263856] rounded-[28px] md:rounded-[32px] p-6 md:p-8">
+          <h2 className="text-3xl md:text-4xl font-black mb-4">Aura Profiles 🌈</h2>
           <p className="text-[#b7c8e8] mb-8">
             MiCirql replaces normal online status with aura rings, vibe badges,
             and behavior-based reputation.
           </p>
 
-          <div className="flex items-center gap-5">
-            <div className="w-24 h-24 rounded-full border-4 border-cyan-400 bg-[#ccff1a] text-black grid place-items-center text-4xl font-black">
+          <div className="flex items-center gap-4 md:gap-5">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-cyan-400 bg-[#ccff1a] text-black grid place-items-center text-3xl md:text-4xl font-black shrink-0">
               M
             </div>
 
             <div>
-              <h3 className="text-2xl font-black">Karthik Raja</h3>
+              <h3 className="text-xl md:text-2xl font-black">Karthik Raja</h3>
               <p className="text-cyan-400 font-black">Aura Rising</p>
               <p className="text-[#ccff1a] font-black mt-2">✨ 152 Aura</p>
               <p className="text-pink-400 font-black">💀 Cooked</p>
@@ -231,9 +231,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-5 py-16">
-        <div className="bg-[#111a2b] border border-[#263856] rounded-[32px] p-8 md:p-12">
-          <h2 className="text-4xl md:text-5xl font-black mb-8">
+      <section className="max-w-7xl mx-auto px-5 py-12 md:py-16">
+        <div className="bg-[#111a2b] border border-[#263856] rounded-[28px] md:rounded-[32px] p-6 md:p-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-8">
             Why MiCirql can work
           </h2>
 
@@ -251,10 +251,10 @@ export default function App() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-5 py-16">
+      <section className="max-w-7xl mx-auto px-5 py-12 md:py-16">
         <div className="grid lg:grid-cols-3 gap-5">
-          <div className="lg:col-span-2 bg-[#111a2b] border border-[#263856] rounded-[32px] p-8">
-            <h2 className="text-4xl font-black mb-4">Future Goals 🚀</h2>
+          <div className="lg:col-span-2 bg-[#111a2b] border border-[#263856] rounded-[28px] md:rounded-[32px] p-6 md:p-8">
+            <h2 className="text-3xl md:text-4xl font-black mb-4">Future Goals 🚀</h2>
             <p className="text-[#b7c8e8] mb-6">
               MiCirql can grow into a private Gen Z social network with
               personalization, aura intelligence, and close-friend culture.
@@ -281,10 +281,10 @@ export default function App() {
 
           <div
             id="waitlist"
-            className="bg-[#ccff1a] text-black rounded-[32px] p-8 flex flex-col justify-between"
+            className="bg-[#ccff1a] text-black rounded-[28px] md:rounded-[32px] p-6 md:p-8 flex flex-col justify-between"
           >
             <div>
-              <h2 className="text-4xl font-black mb-4">Join the Cirql</h2>
+              <h2 className="text-3xl md:text-4xl font-black mb-4">Join the Cirql</h2>
               <p className="font-bold">
                 Be one of the first people to try MiCirql before public launch.
               </p>
